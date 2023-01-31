@@ -1,0 +1,23 @@
+Reservas
+  - quartos
+    - total de quartos
+    - quartos disponiveis
+    - quartos reservados
+    
+  - reserva
+    - tempo em noites/dias
+    - momento de inicio da reserva
+    - momento do fim da reserva
+  
+  - anulações
+    - atualiza os dados
+   
+  - Total
+    - total faturado
+
+   
+   
+    
+  
+    
+  
