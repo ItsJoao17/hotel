@@ -1,63 +1,66 @@
-function reservarQuarto1(nr, inicio, fim, preco){ 
+function reservarQuarto1(n, inicio, fim, preco){ 
+    
+    // Alterar o estado do vetor dos quartos de 'd' para 'r'
+    if(quartos[0][1] == 'd'){
+        quartos[0][1] = 'r';
 
-    var tmp = [];
-    n = nr;
-    tmp.push(n);
-    tmp.push(inicio);
-    tmp.push(fim);
-    tmp.push(preco);
+        document.getElementById('estado1').innerHTML = "Reservado";
+        var tmp = [];
+        tmp.push(n);
+        
 
-    reservas.push(tmp);
-    listarQuartos(n);
+        //Alterar estado no frontend
+        
+        tmp.push(inicio);
+        tmp.push(fim);
+        tmp.push(preco);
+
+        reservas.push(tmp);
+        listarQuartos(n);
+    }else{
+        alert('Quarto ja reservado');
+    }
 }
 
+// Reservar quarto nr.2
 function reservarQuarto2(n, inicio, fim, preco){ 
 
-    var tmp2 = [];
-    tmp2.push(n);
-    tmp2.push(inicio);
-    tmp2.push(fim);
-    tmp2.push(preco);
+    // Verificar e alterar dados de estado
+    if(quartos[1][1] == 'd'){
+        quartos[1][1] = 'r';
 
-    reservas.push(tmp2);
-    listarQuartos(n);
-}
-//-----------function reservarQuarto----------
+        document.getElementById('estado2').innerHTML = "Reservado";
+        var tmp2 = [];
+        tmp2.push(n);
+        tmp2.push(inicio);
+        tmp2.push(fim);
+        tmp2.push(preco);
 
-/*function contarQuartos(){
-    
-    var n;
-
-    for(var i = 0; i < quartos[0].length; i++){
-        n++;
+        reservas.push(tmp2);
+        listarQuartos();
+    }else{
+        alert('Quarto ja reservado');
     }
+}
 
-    return n;
-}*/
-//-----------function para contar quartos disponiveis ou indisponiveis-----------
-/*
-window.addEventListener('click', function(){
-    document.getElementById('AVquarto').innerHTML = contarQuartos();
-});*/
-//------------Dar update ao numero de quartos na pagina------------
+// Listar quartos reservados na tabela
+function listarQuartos(){
+    var x = 1;
+    for (var i = 0, l1 = reservas.length; i < l1; i++) {
 
-
-function listarQuartos(x){
-    var r = x-1;
-    var n = 'n' + x;
-    var q = 'q' + x;
-    var b = 'i' + x;
-    var f = 'f' + x;
-    var p = 'p' + x;
-    document.getElementById(n).innerHTML = reservas[r][0];
-    document.getElementById(q).innerHTML = reservas[r][1];
-    document.getElementById(b).innerHTML = reservas[r][2];
-    document.getElementById(f).innerHTML = reservas[r][3];
-    document.getElementById(p).innerHTML = reservas[r][4];
+        // This loop is for inner-arrays
+        for (var j = 0, l2 = reservas[i].length; j < l2; j++) {
+            
+            // Accessing each elements of inner-array
+            document.getElementById('n' + x).innerHTML = reservas[i][j];
+            x++;
+        }
+    }
     
 }
+
 //----------------listar quartos reservados
 var reservas = [];
-var quartos = [['1', 'd']];
+var quartos = [['1', 'd'], ['2', 'd'], ['3','d'], ['4', 'd']];
 var total = [];
 
