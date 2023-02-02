@@ -1,0 +1,181 @@
+ @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+ /*Cover*/
+  
+    .ll{
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding: 60px;
+    margin-top: 120px;
+
+    }
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+  background-color: #3d3d3d;
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode {
+  background-color: #3d3d3d;
+  color: rgb(255, 255, 255);
+}
+
+.light-mode {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+#tabela-reservas{
+margin: 20px;
+width: 40%;
+float: right;
+border: 1px solid white;
+right: 0;
+box-shadow:  0 0 10px #000000;
+border-radius: 10px;
+}
+
+#reservas {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding: 15px 15px 0px 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    
+   
+  }
+  
+#a1{
+
+    font-family: 'Itim', cursive;
+    margin-right:10px ;
+    margin-left: 40px;
+    margin-top: 70px;
+   
+}
+#a2{
+
+    margin-right: 550px;
+
+}
+#linha{ 
+
+  font-size: 30px;
+  
+}
+
+
+#img2 {
+
+  max-width: 100%;
+  max-height: 90px;
+
+}
+
+
+/* Quartos*/
+
+.container {
+
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+
+  
+}
+
+hr{
+  color: #ffffff;
+}
+.item{
+  display: flex;
+  margin: 10pX;
+  box-shadow:  0 0 10px #000000;
+  border-radius: 10px;
+  width: 800px;
+  height: 300px;
+}
+
+.data-hotel{
+  width: 65%;
+  top: 0;
+}
+
+img {
+  border-radius: 10px;
+  width: 200px;
+  height: 90%;
+  margin: 10pX;
+}
+
+.image {
+  flex-basis: 10%;
+}
+
+.text {
+  font-size: 20px;
+  margin: 20px;
+  width: 100%;
+}
+
+.reserve{
+  margin: 20px;
+width: 100%;
+}
+
+#Listar{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.btn{
+
+  font-size:20px ;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  background: blue;
+  color: white
+}
+
+.int{
+  text-align: center;
+  font-size:17px;
+  padding: 5px;
+  width: 150px;
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px;
+ }
+
+ .int:focus{
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px blue;
+ }
+/*Fotter*/
+

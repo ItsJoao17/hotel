@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="/img" href="">
+</head>
+<body>
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+
+    <div class="nav">
+        <nav> 
+            <div class="image"> 
+                <div class="inner">
+                  <i>★★★</i>
+                  <img id="img2" src="img/hotels-logo-41825.png" alt="" >   
+                  <i>★★★</i>
+                </div>
+              </div>     
+          
+            <a href="" id="a1">ppp</a> 
+            <a href="" id="a1">ppp</a> 
+            <a href="" id="a1">ppp</a> 
+            <a href="" id="a1">ppp</a>   
+                <br>
+                   
+        </nav>  
+    </div>
+    <br>
+ <hr>
+    <div id="tabela-reservas">
+        
+    </div>
+    <div class="container">  
+        <div class="item">
+            <div class="image">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/square200/253772574.webp?k=1fe7477af5ee0460403ce21d5a39c4e8f023586b5671a2104dd954ad1ccc315d&o=">             
+                </div>
+            <div class="data-hotel">
+                <div class="text">
+                    <div style="text-align: right; width: 120px; float:right">
+                        <p>Preços a partir de <h1 style="color: blue;">97€</h1> por noite</p>
+                    </div> 
+                    <h3>VIP Executive Arts Hotel</h3>
+                    <br>
+                    <h4>Em: Parque das Nações, Lisboa</h4>
+                    <br>
+                    <p>Disponivel</p>
+                </div>
+                <div class="reserve"> 
+                    <hr>     
+                    <form id="myForm">
+                        Entrada <input id="start_01" class="int" type="date" placeholder="DD/MM">
+                        <br>
+                        Saida <input id="end_01" class="int" type="date" placeholder="DD/MM">
+                        <button class="btn" type="button" onclick="efetuarReserva('123')">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="item">
+            <div class="image">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/square200/253772574.webp?k=1fe7477af5ee0460403ce21d5a39c4e8f023586b5671a2104dd954ad1ccc315d&o=">             
+                </div>
+            <div class="data-hotel">
+                <div class="text">
+                    <div style="text-align: right; width: 120px; float:right">
+                        <p>Preços a partir de <h1 style="color: blue;">97€</h1> por noite</p>
+                    </div> 
+                    <h3>VIP Executive Arts Hotel</h3>
+                    
+                    <br>
+                    <h4>Em: Parque das Nações, Lisboa</h4>
+                    
+                </div>
+                <br><br>           
+                <div class="reserve"> 
+                    <form id="myForm">
+                        Data de Inicio <input id="start_02" class="int" type="tedatext" placeholder="DD/MM/YYYY">
+                        <br>
+                        Data Final <input id="end_02" class="int" type="text" placeholder="DD/MM/YYYY">
+                        <button class="btn" type="button" onclick="efetuarReserva('456')">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="item">
+            <div class="image">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/square200/253772574.webp?k=1fe7477af5ee0460403ce21d5a39c4e8f023586b5671a2104dd954ad1ccc315d&o=">             
+                </div>
+            <div class="data-hotel">
+                <div class="text">
+                    <div style="text-align: right; width: 120px; float:right">
+                        <p>Preços a partir de <h1 style="color: blue;">97€</h1> por noite</p>
+                    </div> 
+                    <h3>VIP Executive Arts Hotel</h3>
+                    
+                    <br>
+                    <h4>Em: Parque das Nações, Lisboa</h4>
+                    
+                </div>
+                <br><br>           
+                <div class="reserve"> 
+                    <form id="myForm">
+                        Data de Inicio <input id="start_03" class="int" type="text" placeholder="DD/MM/YYYY">
+                        <br>
+                        Data Final <input id="end_03" class="int" type="text" placeholder="DD/MM/YYYY">
+                        <button class="btn" type="button" onclick="efetuarReserva('789')">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">  
+        <div class="item">
+            <div class="image">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/square200/253772574.webp?k=1fe7477af5ee0460403ce21d5a39c4e8f023586b5671a2104dd954ad1ccc315d&o=">             
+                </div>
+            <div class="data-hotel">
+                <div class="text">
+                    <div style="text-align: right; width: 120px; float:right">
+                        <p>Preços a partir de <h1 style="color: blue;">97€</h1> por noite</p>
+                    </div> 
+                    <h3>VIP Executive Arts Hotel</h3>
+                    
+                    <br>
+                    <h4>Em: Parque das Nações, Lisboa</h4>
+                    
+                </div>
+                <br><br>           
+                <div class="reserve"> 
+                    <form id="myForm">
+                        Data de Inicio <input id="start_04" class="int" type="date" placeholder="DD/MM/YYYY">
+                        <br>
+                        Data Final <input id="end_04" class="int" type="date" placeholder="DD/MM/YYYY">
+                        <button class="btn" type="button" onclick="efetuarReserva('1011')">Reservar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main-script.js"></script>
+</body>
+
+</html>
