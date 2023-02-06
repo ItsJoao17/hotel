@@ -1,0 +1,12 @@
+Implementar nos buttons quando estiver um quarto livre manter bola verde quanndo não hover mais quartos disponivel por bola vermelha 
+
+html
+<div class="blink_me"><img src="Green Ball icon icon.png" alt=""></div>
+
+html
+<div class="blink_me"><img id="red" src="red-ball-icon.png" alt=""></div>
+
+css 
+.blink_me {
+    animation: blinker 3s linear infinite;
+}
